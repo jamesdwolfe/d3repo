@@ -12,8 +12,8 @@ let y = d3.scaleLinear();
 let g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 g.append("g").attr("class", "xaxis");
 g.append("g").attr("class","yaxis");
-g.append("text").attr("class", "yname").attr("text-anchor", "end").attr("y", -5).attr("x", 0).attr("transform", "rotate(0)").text("name");
-g.append("text").attr("class", "xname").attr("text-anchor", "end").text("value1");
+g.append("text").attr("class", "yname").attr("text-anchor", "end").attr("y", -5).attr("x", 5).attr("transform", "rotate(0)").text("value1");
+g.append("text").attr("class", "xname").attr("text-anchor", "end").text("name");
 
 //Get the svg element from graph 2
 let svg2 = d3.select("#graph2");
@@ -24,8 +24,8 @@ let y2 = d3.scaleLinear();
 let g2 = svg2.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 g2.append("g").attr("class", "xaxis");
 g2.append("g").attr("class","yaxis");
-g2.append("text").attr("class", "yname").attr("text-anchor", "end").attr("y", -5).attr("x", 0).attr("transform", "rotate(0)").text("name");
-g2.append("text").attr("class", "xname").attr("text-anchor", "end").text("value2");
+g2.append("text").attr("class", "yname").attr("text-anchor", "end").attr("y", -5).attr("x", 5).attr("transform", "rotate(0)").text("value2");
+g2.append("text").attr("class", "xname").attr("text-anchor", "end").text("name");
 
 //Function to draw/redraw the graph
 function draw(svgParam,xParam,yParam,gParam) {
